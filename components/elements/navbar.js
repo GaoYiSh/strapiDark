@@ -16,15 +16,9 @@ import CustomLink from "./custom-link"
 import LocaleSwitch from "../locale-switch"     //没加{}是const
 import { localizePath } from "@/utils/localize" //{}内的是function
 import  Switchtry  from "@/components/mode-sw-try";
-//import {setmodev} from "@/templates/page"
-//import modev from "@/config";
-import  setmodev  from "@/cf-fuc"  //为啥明明是函数却不用{}，害我浪费好久
-import modev from "../../config"
 
 //var fn = x => x * x;
 function Navbar({vv, setvv, navbar, pageContext}){
-//const Navbar = ({ navbar, pageContext, props}) => {
-  
   const [mobileMenuIsShown, setMobileMenuIsShown] = useState(false)
 
   return (
@@ -82,6 +76,7 @@ function Navbar({vv, setvv, navbar, pageContext}){
               <MdMenu className="h-8 w-auto" />
             </button>
 
+{/* 添加处*/}
 {<div>
 <Switchtry vv={vv} setvv={setvv}/>
 </div>
